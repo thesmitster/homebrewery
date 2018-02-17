@@ -1,10 +1,12 @@
 {
 	"assets": ["*.png","*.otf", "*.ico"],
 	"shared":[
+"./shared"
 	],
 	"libs" : [
 		"react",
 		"react-dom",
+    "create-react-class",
 		"lodash",
 		"classnames",
 		"codemirror",
