@@ -2,6 +2,7 @@ const React = require('react');
 const _ = require('lodash');
 const cx = require('classnames');
 const request = require("superagent");
+const createReactClass = require('create-react-class');
 
 const Markdown = require('naturalcrit/markdown.js');
 
@@ -17,7 +18,7 @@ const BrewRenderer = require('../../brewRenderer/brewRenderer.jsx');
 
 const KEY = 'homebrewery-new';
 
-const NewPage = React.createClass({
+const NewPage = createReactClass({
 	getInitialState: function() {
 		return {
 			metadata : {

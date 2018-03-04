@@ -3,8 +3,9 @@ const _     = require('lodash');
 const cx    = require('classnames');
 const moment = require('moment');
 const request = require("superagent");
+const createReactClass = require('create-react-class');
 
-const BrewItem = React.createClass({
+const BrewItem = createReactClass({
 	getDefaultProps: function() {
 		return {
 			brew : {

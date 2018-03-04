@@ -1,9 +1,10 @@
 const React = require('react');
 const _ = require('lodash');
+const createReactClass = require('create-react-class');
 
 const Nav = require('naturalcrit/nav/nav.jsx');
 
-const Navbar = React.createClass({
+const Navbar = createReactClass({
 	getInitialState: function() {
 		return {
 			//showNonChromeWarning : false,

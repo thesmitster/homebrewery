@@ -2,6 +2,7 @@ const React = require('react');
 const _ = require('lodash');
 const cx = require('classnames');
 const request = require("superagent");
+const createReactClass = require('create-react-class');
 
 const Nav = require('naturalcrit/nav/nav.jsx');
 const Navbar = require('../../navbar/navbar.jsx');
@@ -20,7 +21,7 @@ const Markdown = require('naturalcrit/markdown.js');
 const SAVE_TIMEOUT = 3000;
 
 
-const EditPage = React.createClass({
+const EditPage = createReactClass({
 	getDefaultProps: function() {
 		return {
 			brew : {

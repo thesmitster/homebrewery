@@ -1,6 +1,7 @@
 var React = require('react');
 var _ = require('lodash');
 var cx = require('classnames');
+var createReactClass = require('create-react-class');
 
 
 var CodeMirror;
@@ -13,7 +14,7 @@ if(typeof navigator !== 'undefined'){
 }
 
 
-var CodeEditor = React.createClass({
+var CodeEditor = createReactClass({
 	getDefaultProps: function() {
 		return {
 			language : '',
